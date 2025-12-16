@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="SIM Lab Kenya - Holiday Innovation Program 2025. Empowering students through hands-on science, innovation, and creativity for a sustainable future." />
+    <meta name="keywords" content="SIM Lab, Kenya, STEM education, science program, innovation, holiday program, students, learning" />
+    <meta name="theme-color" content="#003052" />
+    <title>SIM Lab Kenya Holiday Innovation Site</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

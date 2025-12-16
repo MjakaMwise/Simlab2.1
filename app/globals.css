@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-primary: #003052;
+    --bg-secondary: #004B7A;
+    --text-primary: #FFFFFF;
+    --text-secondary: #E2E8F0;
+    --border-color: rgba(0, 169, 224, 0.2);
+  }
+
+  .light {
+    --bg-primary: #FFFFFF;
+    --bg-secondary: #F7FAFC;
+    --text-primary: #1A202C;
+    --text-secondary: #4A5568;
+    --border-color: #E2E8F0;
+  }
+
+  * {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  }
+
+  body {
+    @apply font-['Inter'] text-primary-navy dark:text-white bg-white dark:bg-primary-navy;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-['Poppins'];
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gradient-button text-white px-6 py-3 rounded-lg font-semibold shadow-glow-cyan-md hover:shadow-glow-cyan-lg transition-all duration-300 hover:-translate-y-0.5;
+  }
+
+  .btn-secondary {
+    @apply bg-transparent border-2 border-accent-cyan text-accent-cyan px-6 py-3 rounded-lg font-semibold hover:bg-accent-cyan hover:text-white transition-all duration-300;
+  }
+
+  .glass-card {
+    @apply bg-primary-navy/60 dark:bg-primary-navy/60 light:bg-white/80 backdrop-blur-md border border-accent-cyan/20 dark:border-accent-cyan/20 light:border-gray-200 rounded-xl shadow-glass;
+  }
+
+  .glow-effect {
+    @apply shadow-glow-cyan;
+  }
+
+  .section-padding {
+    @apply py-20 px-4 md:px-8 lg:px-16;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+}
+
+@layer utilities {
+  .text-shadow-glow {
+    text-shadow: 0 0 10px rgba(0, 169, 224, 0.5);
+  }
+
+  .bg-pattern-circuit {
+    background-image:
+      linear-gradient(90deg, rgba(0, 169, 224, 0.05) 1px, transparent 1px),
+      linear-gradient(rgba(0, 169, 224, 0.05) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+}
