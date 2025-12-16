@@ -54,8 +54,7 @@ export default function HomePage() {
           ))}
         </div>
 
-       
-
+        <div className="relative z-10 flex flex-col items-center justify-center text-center">
           <h1 className="text-5xl md:text-7xl font-bold text-white dark:text-white text-gray-900 mb-6 animate-slide-up" style={{ animationDelay: '0.1s' }}>
             Transform Your Holiday into an
             <span className="block text-accent-cyan mt-2">Innovation Adventure</span>
@@ -80,6 +79,7 @@ export default function HomePage() {
               Learn More
             </Link>
           </div>
+        </div>
         </div>
 
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
